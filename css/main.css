@@ -1872,6 +1872,18 @@ header .logo a {
 	transform: scale(1.05);
 }
 
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 20px; /* espacio entre videos */
+  }
+
+  .video-grid iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* mantiene la proporción de video */
+  }
+
+
 /**
  * responsive:
  * portfolio
@@ -1893,6 +1905,11 @@ header .logo a {
 	}
 }
 
+@media (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: 1fr; /* solo 1 columna en pantallas chicas */
+  }
+}
 /**
  * Popup Modal - (_layout.scss)
  * ------------------------------------------------------------------
