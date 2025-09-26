@@ -196,3 +196,230 @@
 		
 		<iframe width="100%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2148989313&color=%23a43e42&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/diaphoramusic" title="diaphora.music" target="_blank" style="color: #cccccc; text-decoration: none;">diaphora.music</a> · <a href="https://soundcloud.com/diaphoramusic/diaphora-female-dj-mix-pop-disco-latin-high-energy-hits" title="🎧 Diaphora – Female DJ Mix 🌊🎉 | Pop, Disco &amp; Latin  🪩💫 | High Energy Hits 🎛️ 💃" target="_blank" style="color: #cccccc; text-decoration: none;">🎧 Diaphora – Female DJ Mix 🌊🎉 | Pop, Disco &amp; Latin  🪩💫 | High Energy Hits 🎛️ 💃</a></div>
 		<iframe width="100%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2129899725&color=%23a43e42&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/diaphoramusic" title="diaphora.music" target="_blank" style="color: #cccccc; text-decoration: none;">diaphora.music</a> · <a href="https://soundcloud.com/diaphoramusic/sunset-house-la-hora-bruja-housetech-latin-tech" title="HOUSE • TECH • LATIN TECH 2025 ✨La Hora Bruja" target="_blank" style="color: #cccccc; text-decoration: none;">HOUSE • TECH • LATIN TECH 2025 ✨La Hora Bruja</a></div>
+
+
+			<div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+	         	<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/liberty.jpg" alt="Liberty">
+	                  <a href="#modal-01" class="overlay">	                  	           
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+		     					       <h3 class="folio-title">Liberty</h3>	     					    
+		     					    	 <span class="folio-types">
+		     					       	  Graphic Design
+		     					       </span>
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>	               
+	        		</div> <!-- /folio-item -->
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/shutterbug.jpg" alt="Shutterbug">
+	               	<a href="#modal-02" class="overlay">              		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Shutterbug</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Web Design
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/clouds.jpg"alt="Clouds">
+	                  <a href="#modal-03" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Clouds</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Web Design
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/beetle.jpg" alt="Beetle">
+	                  <a href="#modal-04" class="overlay">                  	                 
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Beetle</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Branding
+		     					      </span>		     		
+		     					   </div>  	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->     
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/lighthouse.jpg" alt="Lighthouse">
+	                  <a href="#modal-05" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Lighthouse</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Web Development
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/salad.jpg" alt="Salad">
+	                  <a href="#modal-06" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Salad</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Branding
+		     					      </span>		     		
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->   
+
+	            <!-- modal popups - begin
+	            ============================================================= -->
+	            <div id="modal-01" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<iframe width="560" height="315" src="https://www.youtube.com/embed/wB2tJkD3vpc?si=DfH8Bjg9Iau6Z32R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Liberty</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Web Development</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://www.youtube.com/watch?v=wB2tJkD3vpc" target="_blank">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-01 -->
+
+				   <div id="modal-02" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-shutterbug.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Shutterbug</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Web Design</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-02 -->
+
+				   <div id="modal-03" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-clouds.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Clouds</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Web Design</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-03 -->
+
+				   <div id="modal-04" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-beetle.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Beetle</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Branding</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-04 -->
+
+				   <div id="modal-05" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Lighthouse</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Web Development</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-05 -->
+
+				   <div id="modal-06" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-salad.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Salad</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Branding</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-06 -->
+
+
+				   <!-- modal popups - end
+	            ============================================================= -->
+
+	         </div> <!-- /portfolio-wrapper --> 
