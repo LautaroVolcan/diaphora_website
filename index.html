@@ -33,12 +33,12 @@
 
  	<!-- CSS
    ================================================== -->
-   <link rel="preload" href="images/intro-bg.webp" as="image" type="image/webp">
+   <link rel="preload" href="images/hero.webp" as="image" type="image/webp" media="(min-width: 901px)">
+   <link rel="preload" href="images/hero-mobile.webp" as="image" type="image/webp" media="(max-width: 900px)">
    <link rel="stylesheet" href="css/base.css">
    <link rel="stylesheet" href="css/fonts.css">
    <link rel="stylesheet" href="css/micons/micons.css">
    <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
@@ -49,545 +49,433 @@
 
    <!-- favicons
 	================================================== -->
-	<link rel="icon" type="image/png" href="Flavicon_D.png">
+	<link rel="icon" type="image/png" href="favicon.png">
 
 </head>
 
 <body id="top">
 
-	<!-- header 
+   <!-- header
    ================================================== -->
-   <header>   	
-   	<div class="row">
+   <header>
+      <div class="row">
+         <div class="top-bar">
+            <a class="menu-toggle" href="#" aria-label="Open menu" aria-expanded="false"><span>Menu</span></a>
 
-   		<div class="top-bar">
-   			<a class="menu-toggle" href="#"><span>Menu</span></a>
+            <div class="logo">
+               <a href="index.html">Diaphora</a>
+            </div>
 
-	   		<div class="logo">
-		         <a href="index.html">Diaphora</a>
-		      </div>		      
-
-		   	<nav id="main-nav-wrap">
-					<ul class="main-navigation">
-						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
-						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
-						<li><a class="smoothscroll"  href="#music" title="">Music</a></li>	
-						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
-						<li><a class="smoothscroll"  href="#portfolio" title="">Live Sets</a></li>
-						<li><a class="smoothscroll"  href="#services" title="">Services</a></li>					
-						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>
-						
-								
-					</ul>
-				</nav>    		
-   		</div> <!-- /top-bar --> 
-   		
-   	</div> <!-- /row --> 		
+            <nav id="main-nav-wrap" aria-label="Main">
+               <ul class="main-navigation">
+                  <li class="current"><a href="#intro">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#music">Music</a></li>
+                  <li><a href="#resume">Resume</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#contact">Contact</a></li>
+               </ul>
+            </nav>
+         </div> <!-- /top-bar -->
+      </div> <!-- /row -->
    </header> <!-- /header -->
 
-	<!-- intro section
+
+   <!-- intro section
    ================================================== -->
-   <section id="intro">   
+   <section id="intro">
 
-   	<div class="intro-overlay"></div>	
+      <div class="intro-overlay"></div>
 
-   	<div class="intro-content">
-   		<div class="row">
+      <div class="intro-content">
+         <div class="row">
+            <div class="col-twelve">
 
-   			<div class="col-twelve">
+               <h5>Based in Barcelona</h5>
+               <h1>DIAPHORA</h1>
 
-	   			<h5>Hello, World.</h5>
-	   			<h1>DIAPHORA</h1>
+               <p class="intro-position">
+                  <span>Professional DJ</span>
+                  <span>Singer</span>
+                  <span>Music Producer</span>
+               </p>
 
-	   			<p class="intro-position">
-	   				<span>Professional DJ</span>
-	   				<span>Music Producer</span> 
-	   			</p>
+               <a class="button stroke" href="#about">More about me</a>
 
-	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+               <ul class="intro-social">
+                  <li><a href="https://t.me/DiaphoraMusic" target="_blank" rel="noopener" aria-label="Telegram"><i class="fa-brands fa-telegram "></i></a></li>
+                  <li><a href="https://soundcloud.com/diaphoramusic" target="_blank" rel="noopener" aria-label="SoundCloud"><i class="fa-brands fa-soundcloud "></i></a></li>
+                  <li><a href="https://www.youtube.com/@diaphoramusic" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube "></i></a></li>
+                  <li><a href="https://www.instagram.com/diaphora.music/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram "></i></a></li>
+               </ul> <!-- /intro-social -->
 
-	   		</div>  
-   			
-   		</div>   		 		
-   	</div> <!-- /intro-content --> 
-
-   	<ul class="intro-social">        
-       <li><a href="https://t.me/DiaphoraMusic" target="_blank" rel="noopener" aria-label="Telegram"><i class="fa-brands fa-telegram fa-2x  "></i></a></li>
-  <li><a href="https://soundcloud.com/diaphoramusic" target="_blank" rel="noopener" aria-label="SoundCloud"><i class="fa-brands fa-soundcloud fa-2x"></i></a></li>
-  <li><a href="https://www.youtube.com/@diaphoramusic" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube fa-2x"></i></a></li>
-  <li><a href="https://www.instagram.com/diaphora.music/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
-      </ul> <!-- /intro-social -->      	
+            </div>
+         </div>
+      </div> <!-- /intro-content -->
 
    </section> <!-- /intro -->
 
 
    <!-- about section
    ================================================== -->
-   <section id="about">  
+   <section id="about">
 
-   	<div class="row section-intro">
-   		<div class="col-twelve">
+      <div class="row section-intro">
+         <div class="col-twelve">
 
-   			<h5>About</h5>
-   			<h1>Let me introduce myself.</h1>
+            <h5>About</h5>
+            <h1>DJ, singer and multi-instrumentalist.</h1>
 
-   			<div class="intro-info">
+            <div class="intro-info">
 
-   				<img src="images/profile.webp" alt="Diaphora" width="180" height="180">
+               <img src="images/profile.webp" alt="Diaphora" width="180" height="180">
 
-   				<p class="lead">I am a trained DJ, singer and multi-instrumentalist, and my sets combine technical precision with creativity and groove. I move seamlessly between electronic music and timeless classics, exploring Tech House, Funky House, Techno, and Nu Disco, while also performing Disco, Pop, Latin, R&B, Country, Jazz, Rap, Ballads, and Rock Classics.
-On stage, I bring a strong presence and the ability to connect authentically with the audience, always adapting to the energy of the room. I am confident with microphone use, enjoy engaging directly with people, and maintain professionalism and commitment in every performance. With a background in music education, years of international experience, and perfect English fluency, I combine versatility, reliability, and creativity to deliver an immersive and memorable musical journey across genres and eras.
-</p>
-   			</div>   			
+               <p class="lead">I am a trained DJ, singer and multi-instrumentalist, and my sets combine technical precision with creativity and groove. I move seamlessly between electronic music and timeless classics, exploring Tech House, Funky House, Techno, and Nu Disco, while also performing Disco, Pop, Latin, R&amp;B, Country, Jazz, Rap, Ballads, and Rock Classics.</p>
+               <p class="lead">On stage, I bring a strong presence and the ability to connect authentically with the audience, always adapting to the energy of the room. I am confident with microphone use, enjoy engaging directly with people, and maintain professionalism and commitment in every performance.</p>
+               <p class="lead">With a background in music education, years of international experience, and fluent English, I combine versatility, reliability, and creativity to deliver an immersive and memorable musical journey across genres and eras.</p>
+            </div>
 
-   		</div>   		
-   	</div> <!-- /section-intro -->
+         </div>
+      </div> <!-- /section-intro -->
 
-   
+      <div class="row button-section">
+         <div class="col-twelve">
+            <a href="#contact" class="button stroke">Book me</a>
+            <a href="diaphora-press-kit-2025.pdf" target="_blank" rel="noopener" class="button button-primary">Press kit (PDF)</a>
+         </div>
+      </div>
 
-   	<div class="row button-section">
-   		<div class="col-twelve">
-   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-   			<a href="diaphora-press-kit-2025.pdf" target="_blank" rel="noopener" title="Download CV" class="button button-primary">Download CV</a>
-   		</div>   		
-   	</div>
+   </section> <!-- /about -->
 
-   </section> <!-- /process-->    
 
-<!-- /music -->
- <section id="music">   
+   <!-- music section (mixes + live sets)
+   ================================================== -->
+   <section id="music">
 
-   <div class="overlay"></div>
+      <div class="overlay"></div>
 
-		<div class="row section-intro">
-   		<div class="row">
+      <div class="row section-intro">
+         <div class="col-twelve">
+            <h5>Music</h5>
+            <h1>Listen to my sets.</h1>
+            <p class="lead">Mixes on SoundCloud and live sets recorded on stage.</p>
+         </div>
+      </div> <!-- /section-intro -->
 
-   			<h1>Music</h1>
-   	<p class="lead">Here are some of my Soundcloud Essentials</p>
-	</div>  
-	<div>
-			<iframe class="sc-player" title="SoundCloud player: Diaphora Live @ Ocean Drive Barcelona- Burger Meets Gin March 2024" loading="lazy" scrolling="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1893397146&color=%23ff0077&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-		<div class="sc-credit"><a href="https://soundcloud.com/diaphoramusic" target="_blank" rel="noopener">diaphora.music</a> · <a href="https://soundcloud.com/diaphoramusic/diaphora-live-ocean-drive-barcelona" target="_blank" rel="noopener">Diaphora Live @ Ocean Drive Barcelona- Burger Meets Gin March 2024</a></div>
-		<iframe class="sc-player" title="SoundCloud player: DARK SIDE OF ME – 2025 🖤🌘 Indie Dance · Melodic Techno · Progressive House" loading="lazy" scrolling="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2052818964&color=%23ff0077&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-		<div class="sc-credit"><a href="https://soundcloud.com/diaphoramusic" target="_blank" rel="noopener">diaphora.music</a> · <a href="https://soundcloud.com/diaphoramusic/melodic-minimal-deep-tech-2025" target="_blank" rel="noopener">DARK SIDE OF ME – 2025 🖤🌘 Indie Dance · Melodic Techno · Progressive House</a></div>
-		<iframe class="sc-player" title="SoundCloud player: Sunset Sessions 🌅 Tech, Melodic &amp; House &#x27;26" loading="lazy" scrolling="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2287210274&color=%23ff0077&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-		<div class="sc-credit"><a href="https://soundcloud.com/diaphoramusic" target="_blank" rel="noopener">diaphora.music</a> · <a href="https://soundcloud.com/diaphoramusic/sailing-sunset-session-tech" target="_blank" rel="noopener">Sunset Sessions 🌅 Tech, Melodic &amp; House &#x27;26</a></div>
-		<iframe class="sc-player" title="SoundCloud player: HOUSE • TECH • LATIN TECH 2025 ✨La Hora Bruja" loading="lazy" scrolling="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2129899725&color=%23ff0077&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-		<div class="sc-credit"><a href="https://soundcloud.com/diaphoramusic" target="_blank" rel="noopener">diaphora.music</a> · <a href="https://soundcloud.com/diaphoramusic/sunset-house-la-hora-bruja-housetech-latin-tech" target="_blank" rel="noopener">HOUSE • TECH • LATIN TECH 2025 ✨La Hora Bruja</a></div>
-	</div>
+      <div class="row music-content">
 
-   		 
-		</div>
+         <h3 class="music-subhead">Mixes</h3>
+         <div class="sc-grid">
+               <div>
+                  <iframe class="sc-player" title="SoundCloud player: Música Urbana 2025 - Reggaeton, Old School, Cumbia, RKT, Latin Tech" loading="lazy" scrolling="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2006950675&color=%23ff0077&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                  <div class="sc-credit"><a href="https://soundcloud.com/diaphoramusic" target="_blank" rel="noopener">diaphora.music</a> · <a href="https://soundcloud.com/diaphoramusic/cachengue-pineapple-sessions" target="_blank" rel="noopener">Música Urbana 2025 - Reggaeton, Old School, Cumbia, RKT, Latin Tech</a></div>
+               </div>
+               <div>
+                  <iframe class="sc-player" title="SoundCloud player: DARK SIDE OF ME – 2025 🖤🌘 Indie Dance · Melodic Techno · Progressive House" loading="lazy" scrolling="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2052818964&color=%23ff0077&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                  <div class="sc-credit"><a href="https://soundcloud.com/diaphoramusic" target="_blank" rel="noopener">diaphora.music</a> · <a href="https://soundcloud.com/diaphoramusic/melodic-minimal-deep-tech-2025" target="_blank" rel="noopener">DARK SIDE OF ME – 2025 🖤🌘 Indie Dance · Melodic Techno · Progressive House</a></div>
+               </div>
+               <div>
+                  <iframe class="sc-player" title="SoundCloud player: Sunset Sessions 🌅 Tech, Melodic &amp; House &#x27;26" loading="lazy" scrolling="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2287210274&color=%23ff0077&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                  <div class="sc-credit"><a href="https://soundcloud.com/diaphoramusic" target="_blank" rel="noopener">diaphora.music</a> · <a href="https://soundcloud.com/diaphoramusic/sailing-sunset-session-tech" target="_blank" rel="noopener">Sunset Sessions 🌅 Tech, Melodic &amp; House &#x27;26</a></div>
+               </div>
+               <div>
+                  <iframe class="sc-player" title="SoundCloud player: HOUSE • TECH • LATIN TECH 2025 ✨La Hora Bruja" loading="lazy" scrolling="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2129899725&color=%23ff0077&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                  <div class="sc-credit"><a href="https://soundcloud.com/diaphoramusic" target="_blank" rel="noopener">diaphora.music</a> · <a href="https://soundcloud.com/diaphoramusic/sunset-house-la-hora-bruja-housetech-latin-tech" target="_blank" rel="noopener">HOUSE • TECH • LATIN TECH 2025 ✨La Hora Bruja</a></div>
+               </div>
+         </div>
+
+         <h3 class="music-subhead">Live sets</h3>
+         <div class="video-grid">
+               <iframe src="https://www.youtube.com/embed/gMN3sGGMZ2I?si=NtbzTOYG_GxqJ6dE" title="YouTube video: Diaphora live set 1" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               <iframe src="https://www.youtube.com/embed/6MGvbMT2UTU?si=8ngVfyd5ZM5hl9He" title="YouTube video: Diaphora live set 2" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               <iframe src="https://www.youtube.com/embed/6hHrGTlG7SA?si=8gCWbciw7AauZhar" title="YouTube video: Diaphora live set 3" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               <iframe src="https://www.youtube.com/embed/wdVtqAJhqLk" title="YouTube video: Diaphora live set 4" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </div>
+
+      </div> <!-- /music-content -->
+
    </section> <!-- /music -->
 
-   <!-- resume Section
+
+   <!-- resume section
    ================================================== -->
-	<section id="resume" class="grey-section">
+   <section id="resume" class="grey-section">
 
-		<div class="row section-intro">
-   		<div class="col-twelve">
+      <div class="row section-intro">
+         <div class="col-twelve">
+            <h5>Resume</h5>
+            <h1>Where I've played.</h1>
+            <p class="lead">An overview of my journey as a DJ, musician and performer: from international stages and luxury events to academic training in music.</p>
+         </div>
+      </div> <!-- /section-intro -->
 
-   			<h5>Work Experience</h5>
-   			<h1>This is my resume</h1>
-   			<p class="lead">Here you can find an overview of my professional journey as a DJ, musician, and performer. From international stages to luxury events and academic training in music, this section highlights the experiences and education that have shaped my career.</p>
+      <div class="row resume-timeline">
+         <div class="col-twelve resume-header">
+            <h2>Gigs</h2>
+         </div> <!-- /resume-header -->
+         <div class="col-twelve">
+            <div class="timeline-wrap">
+                  <div class="timeline-block">
+                     <div class="timeline-ico">
+                        <i class="fa-solid fa-globe"></i>
+                     </div>
+                     <div class="timeline-header">
+                        <h3>DJ</h3>
+                        <p>2026</p>
+                     </div>
+                     <div class="timeline-content">
+                        <ul class="gig-list">
+                           <li>Medusa – Buenos Aires, Argentina</li>
+                           <li>ABSIS – Museu d’Art de Catalunya, Barcelona, Spain</li>
+                           <li>Private Wedding – Castell de Sant Marçal, Barcelona, Spain</li>
+                           <li>Hotel Playa Grande – Gavà, Spain</li>
+                           <li>Private Event – Can Bufi Luxury House &amp; Spa, Girona, Spain</li>
+                           <li>La Fàbrica – Coworking &amp; Coliving, Barcelona, Spain</li>
+                           <li>NU BCN – Restaurant, Barcelona, Spain</li>
+                        </ul>
+                     </div>
+                  </div> <!-- /timeline-block -->
+                  <div class="timeline-block">
+                     <div class="timeline-ico">
+                        <i class="fa-solid fa-microphone"></i>
+                     </div>
+                     <div class="timeline-header">
+                        <h3>Hostess, Singer &amp; Guitarist</h3>
+                        <p>2026</p>
+                     </div>
+                     <div class="timeline-content">
+                        <ul class="gig-list">
+                           <li>Sunset Sessions – Buenos Aires, Argentina</li>
+                           <li>Trikini Bar – Barcelona, Spain</li>
+                           <li>Art Studio – Barcelona, Spain</li>
+                        </ul>
+                     </div>
+                  </div> <!-- /timeline-block -->
+                  <div class="timeline-block">
+                     <div class="timeline-ico">
+                        <i class="fa-solid fa-globe"></i>
+                     </div>
+                     <div class="timeline-header">
+                        <h3>DJ</h3>
+                        <p>2025</p>
+                     </div>
+                     <div class="timeline-content">
+                        <ul class="gig-list">
+                           <li>Celebrity Apex (Royal Caribbean Cruises) – Europe, USA, Caribbean</li>
+                           <li>Pacha – Barcelona, Spain</li>
+                           <li>Bunker – Barcelona, Spain</li>
+                           <li>Private Party – Tarragona, Spain</li>
+                           <li>Vrutal Restaurant – Barcelona, Spain</li>
+                           <li>One CoWork – Barcelona, Spain</li>
+                           <li>The Supermercat – Barcelona, Spain</li>
+                           <li>High Class Club – Barcelona, Spain</li>
+                        </ul>
+                     </div>
+                  </div> <!-- /timeline-block -->
+                  <div class="timeline-block">
+                     <div class="timeline-ico">
+                        <i class="fa-solid fa-globe"></i>
+                     </div>
+                     <div class="timeline-header">
+                        <h3>DJ</h3>
+                        <p>2023–2024</p>
+                     </div>
+                     <div class="timeline-content">
+                        <ul class="gig-list">
+                           <li>Sephora – Barcelona, Spain</li>
+                           <li>Apothucker – Barcelona, Spain</li>
+                           <li>Craft – Barcelona, Spain</li>
+                           <li>Melting Spot – Barcelona, Spain</li>
+                           <li>Ocean Drive – Barcelona, Spain</li>
+                           <li>Clock Café – Sicily, Italy</li>
+                        </ul>
+                     </div>
+                  </div> <!-- /timeline-block -->
+                  <div class="timeline-block">
+                     <div class="timeline-ico">
+                        <i class="fa-solid fa-microphone"></i>
+                     </div>
+                     <div class="timeline-header">
+                        <h3>Hostess &amp; Singer</h3>
+                        <p>2017–2022</p>
+                     </div>
+                     <div class="timeline-content">
+                        <ul class="gig-list">
+                           <li>Iberostar Hotel – Palma de Mallorca, Spain</li>
+                           <li>Bacano Disco – Buenos Aires, Argentina</li>
+                        </ul>
+                     </div>
+                  </div> <!-- /timeline-block -->
+            </div> <!-- /timeline-wrap -->
+         </div> <!-- /col-twelve -->
+      </div> <!-- /resume-timeline -->
 
-   		</div>   		
-   	</div> <!-- /section-intro--> 
+      <div class="row resume-timeline">
+         <div class="col-twelve resume-header">
+            <h2>Education</h2>
+         </div> <!-- /resume-header -->
+         <div class="col-twelve">
+            <div class="timeline-wrap">
+                  <div class="timeline-block">
+                     <div class="timeline-ico">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                     </div>
+                     <div class="timeline-header">
+                        <h3>Music Bachelor and Professor</h3>
+                        <p>2014–2020</p>
+                     </div>
+                     <div class="timeline-content">
+                        <h4>University of La Plata – Faculty of Arts</h4>
+                        <p>I developed a strong foundation in music theory, composition, performance, and pedagogy. I participated in artistic and academic projects that enriched my overall musical perspective, both in teaching and professional practice.</p>
+                     </div>
+                  </div> <!-- /timeline-block -->
+                  <div class="timeline-block">
+                     <div class="timeline-ico">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                     </div>
+                     <div class="timeline-header">
+                        <h3>Professional Electronic &amp; Urban Music DJ</h3>
+                        <p>2023–2024</p>
+                     </div>
+                     <div class="timeline-content">
+                        <h4>Plastic Academy Barcelona</h4>
+                        <p>I specialized in electronic and urban music production and performance, honing skills in mixing, live sets, and creating engaging musical experiences. During this time, I also had the opportunity to perform at iconic venues in Barcelona, gaining experience on renowned stages.</p>
+                     </div>
+                  </div> <!-- /timeline-block -->
+            </div> <!-- /timeline-wrap -->
+         </div> <!-- /col-twelve -->
+      </div> <!-- /resume-timeline -->
 
-   	<div class="row resume-timeline">
-
-   		<div class="col-twelve resume-header">
-
-   			<h2>Work Experience</h2>
-
-   		</div> <!-- /resume-header -->
-
-   		<div class="col-twelve">
-
-   			<div class="timeline-wrap">
-
-   				<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa-solid fa-globe"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>DJ</h3>
-	   					<p>2025</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>GIGS</h4>
-	   					<p>Celebrity Apex (Royal Caribbean Cruises) - Europe, USA, Caribbean <br> Pacha – Barcelona, Spain <br> Bunker – Barcelona, Spain <br> Private Party – Tarragona, Spain <br> Vrutal Restaurant – Barcelona, Spain <br> One CoWork – Barcelona, Spain <br> The Supermercat – Barcelona, Spain <br> High Class Club – Barcelona, Spain
-</p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-	   			<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa-solid fa-globe"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>DJ</h3>
-	   					<p>2023 - 2024</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>GIGS</h4>
-	   					<p>Sephora - Barcelona, Spain <br> Apothucker – Barcelona, Spain <br> Craft – Barcelona, Spain <br> Melting Spot – Barcelona, Spain <br> Ocean Drive – Barcelona, Spain <br> Clock Café – Sicily, Italy
-</p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-	   			<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa-solid fa-globe"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>HOSTESS & SINGER</h3>
-	   					<p>2017 – 2022
-</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>GIGS</h4>
-	   					<p>Iberostar Hotel – Palma de Mallorca, Spain <br> Bacano Disco - Buenos Aires, Argentina
-</p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-   			</div> <!-- /timeline-wrap -->   			
-
-   		</div> <!-- /col-twelve -->
-   		
-   	</div> <!-- /resume-timeline -->
-   	
-   	<div class="row resume-timeline">
-
-   		<div class="col-twelve resume-header">
-
-   			<h2>Education</h2>
-
-   		</div> <!-- /resume-header -->
-
-   		<div class="col-twelve">
-
-   			<div class="timeline-wrap">
-
-   				<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa-regular fa-id-card"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Music Bachelor and Professor</h3>
-	   					<p>2014 - 2020</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>University of La Plata. Faculty of Arts</h4>
-	   					<p> I developed a strong foundation in music theory, composition, performance, and pedagogy. I participated in artistic and academic projects that enriched my overall musical perspective, both in teaching and professional practice.</p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-	   			<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa-regular fa-id-card"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Professional Electronic & Urban Music DJ</h3>
-	   					<p>2023-2024</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>Plastic Academy Barcelona</h4>
-	   					<p>I specialized in electronic and urban music production and performance, honing skills in mixing, live sets, and creating engaging musical experiences. During this time, I also had the opportunity to perform at iconic venues in Barcelona, gaining experience on renowned stages.</p>
-	   				</div>
-
-	   			
-
-	   			</div> <!-- /timeline-block -->
-
-   			</div> <!-- /timeline-wrap -->   			
-
-   		</div> <!-- /col-twelve -->
-   		
-   	</div> <!-- /resume-timeline -->
-		
-	</section> <!-- /features -->
+   </section> <!-- /resume -->
 
 
-	<!-- Portfolio Section
+   <!-- services section
    ================================================== -->
-	<section id="portfolio">
-  <div class="row section-intro">
-    <div class="col-twelve">
-      <h5>Live Sets</h5>
-      <h1>Check Out Some of My live sets.</h1>
-      <p class="lead">
-        Experience the energy and flow of my live performances, where electronic and urban sounds come together to create unique musical journeys. From underground vibes to iconic venues, every set is crafted to move the crowd and bring the music to life.
-      </p>
-    </div>
-  </div>
-  <!-- /section-intro-->
+   <section id="services">
 
-  <div class="row portfolio-content">
-    <div class="video-grid">
-      <iframe
-        src="https://www.youtube.com/embed/wB2tJkD3vpc?si=9JvzIhmCsVWMTM27"
-        title="YouTube video: Diaphora live set 1"
-        loading="lazy"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <div class="overlay"></div>
 
-      <iframe
-        src="https://www.youtube.com/embed/gMN3sGGMZ2I?si=NtbzTOYG_GxqJ6dE"
-        title="YouTube video: Diaphora live set 2"
-        loading="lazy"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <div class="row section-intro">
+         <div class="col-twelve">
+            <h5>Services</h5>
+            <h1>What can I do for you?</h1>
+            <p class="lead">Every set is shaped around the venue, the crowd and the moment.</p>
+         </div>
+      </div> <!-- /section-intro -->
 
-      <iframe
-        src="https://www.youtube.com/embed/6MGvbMT2UTU?si=8ngVfyd5ZM5hl9He"
-        title="YouTube video: Diaphora live set 3"
-        loading="lazy"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <div class="row services-content">
+         <div class="services-list">
+            <div class="service">
+               <span class="icon"><i class="fa-solid fa-champagne-glasses"></i></span>
+               <div class="service-content">
+                  <h3>Luxury &amp; Corporate Events</h3>
+                  <p class="desc">Curated DJ sets tailored to upscale events, fashion shows, product launches, and private parties.</p>
+               </div>
+            </div> <!-- /service -->
+            <div class="service">
+               <span class="icon"><i class="fa-solid fa-ship"></i></span>
+               <div class="service-content">
+                  <h3>Cruises &amp; International Engagements</h3>
+                  <p class="desc">Versatile sets across genres (EDM, Disco, Pop, Latin, R&amp;B, Jazz, Rock Classics, etc.) for diverse global audiences.</p>
+               </div>
+            </div> <!-- /service -->
+            <div class="service">
+               <span class="icon"><i class="fa-solid fa-martini-glass-citrus"></i></span>
+               <div class="service-content">
+                  <h3>Hotels, Rooftops &amp; Lounges</h3>
+                  <p class="desc">Refined selections that create the perfect atmosphere for boutique hotels, rooftops, and exclusive lounges.</p>
+               </div>
+            </div> <!-- /service -->
+            <div class="service">
+               <span class="icon"><i class="fa-solid fa-compact-disc"></i></span>
+               <div class="service-content">
+                  <h3>Nightclubs &amp; Festivals</h3>
+                  <p class="desc">High-energy performances blending Tech House, Funky House, Nu Disco, Techno, and more, adapted to the crowd.</p>
+               </div>
+            </div> <!-- /service -->
+         </div> <!-- /services-list -->
+      </div> <!-- /services-content -->
 
-      <iframe
-        src="https://www.youtube.com/embed/6hHrGTlG7SA?si=8gCWbciw7AauZhar" 
-        title="YouTube video: Diaphora live set 4"
-        loading="lazy"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </div>
-  </div>
-  <!-- /portfolio-content -->
-</section>
-<!-- /portfolio -->
+   </section> <!-- /services -->
 
 
-
-	<!-- services Section
-   ================================================== -->
-	<section id="services">
-
-		<div class="overlay"></div>
-
-		<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>Services</h5>
-   			<h1>What Can I Do For You?</h1>
-
-   			<p class="lead">Check out some of my performances</p>
-
-   		</div>   		
-   	</div> <!-- /section-intro -->
-
-   	<div class="row services-content">
-
-   		<div id="owl-slider" class="owl-carousel services-list">
-
-	      	<div class="service">	
-
-	      		<span class="icon"><i class="icon-earth"></i></span>            
-
-	            <div class="service-content">	
-
-	            	 <h3>Luxury & Corporate Events</h3>
-
-		            <p class="desc"> Curated DJ sets tailored to upscale events, fashion shows, product launches, and private parties.
-	         		</p>
-	         		
-	         	</div> 	         	 
-
-				</div> <!-- /service -->
-
-				<div class="service">	
-
-					<span class="icon"><i class="icon-window"></i></span>                          
-
-	            <div class="service-content">	
-
-	            	<h3>Cruises & International Engagements</h3>  
-
-		            <p class="desc"> Versatile sets across genres (EDM, Disco, Pop, Latin, R&B, Jazz, Rock Classics, etc.) for diverse global audiences.
-	         		</p>
-
-	            </div>	                          
-
-			   </div> <!-- /service -->
-
-			   <div class="service">
-
-			   	<span class="icon"><i class="icon-paint-brush"></i></span>		            
-
-	            <div class="service-content">
-
-	            	<h3>Hotels, Rooftops & Lounges</h3>
-
-		            <p class="desc"> Refined selections that create the perfect atmosphere for boutique hotels, rooftops, and exclusive lounges.
-	        			</p> 
-
-	            </div> 	            	               
-
-			   </div> <!-- /service -->
-
-				<div class="service">
-
-					<span class="icon"><i class="icon-toggles"></i></span>	              
-
-	            <div class="service-content">
-
-	            	<h3>Nightclubs & Festivals</h3>
-
-		            <p class="desc"> High-energy performances blending Tech House, Funky House, Nu Disco, Techno, and more, adapted to the crowd.
-
-	         		</p> 
-	         		
-	            </div>                
-
-				</div> <!-- /service -->
-
-
-	      </div> <!-- /services-list -->
-   		
-   	</div> <!-- /services-content -->
-		
-	</section> <!-- /services -->	
-
-
-	
-
-	
    <!-- contact
    ================================================== -->
-	<section id="contact">
+   <section id="contact">
 
-		<div class="row section-intro">
-   		<div class="col-twelve">
+      <div class="row section-intro">
+         <div class="col-twelve">
+            <h5>Contact</h5>
+            <h1>Let's work together.</h1>
+            <p class="lead">For bookings, collaborations or press, send me an email or book me directly through Gig Heaven.</p>
+         </div>
+      </div> <!-- /section-intro -->
 
-   			<h5>Contact</h5>
-   			<h1>I'd Love To Hear From You.</h1>
+      <div class="row contact-info">
 
-   			<p class="lead">Whether you want to book a live set, collaborate on a project, or just say hi, feel free to get in touch. I’m always excited to connect with fellow music lovers and creators.</p>
+         <div class="col-four tab-full">
+            <div class="icon">
+               <i class="icon-pin"></i>
+            </div>
+            <h5>Where to find me</h5>
+            <p>Barcelona, Spain<br>Buenos Aires, Argentina</p>
+         </div>
 
-   		</div> 
-   	</div> <!-- /section-intro -->
+         <div class="col-four tab-full collapse">
+            <div class="icon">
+               <i class="icon-mail"></i>
+            </div>
+            <h5>Email me at</h5>
+            <p><a href="mailto:diaphora.music@gmail.com">diaphora.music@gmail.com</a></p>
+         </div>
 
-   	<div class="row contact-info">
+         <div class="col-four tab-full">
+            <div class="icon">
+               <i class="icon-calendar"></i>
+            </div>
+            <h5>Book a gig at</h5>
+            <p><a href="https://www.gigheaven.com/members/diaphora.html" target="_blank" rel="noopener">Gig Heaven</a></p>
+         </div>
 
-   		<div class="col-four tab-full">
+      </div> <!-- /contact-info -->
 
-   			<div class="icon">
-   				<i class="icon-pin"></i>
-   			</div>
-
-   			<h5>Where to find me</h5>
-
-   			<p>
-            Barcelona, 08011 SP<br>
-            Buenos Aires, 1900 ARG<br>
-    
-         </p>
-
-   		</div>
-
-   		<div class="col-four tab-full collapse">
-
-   			<div class="icon">
-   				<i class="icon-mail"></i>
-   			</div>
-
-   			<h5>Email Me At</h5>
-
-   			<p><a href="mailto:diaphora.music@gmail.com">diaphora.music@gmail.com</a></p>
-
-   		</div>
-
-   		<div class="col-four tab-full">
-
-   			<div class="icon">
-   				<i class="icon-phone"></i>
-   			</div>
-
-   			<h5>Book a gig At</h5>
-
-   			<p> <a href="https://www.gigheaven.com/members/diaphora.html" target="_blank" rel="noopener">Gig heaven</a><br>
-			   
-			
-			   </p>
-
-   		</div>
-   		
-   	</div> <!-- /contact-info -->
-		
-	</section> <!-- /contact -->
+   </section> <!-- /contact -->
 
 
    <!-- footer
    ================================================== -->
-
    <footer>
-     	<div class="row">
+      <div class="row">
 
-     		<div class="col-six tab-full pull-right social">
+         <div class="col-six tab-full pull-right social">
+            <ul class="footer-social">
+                  <li><a href="https://t.me/DiaphoraMusic" target="_blank" rel="noopener" aria-label="Telegram"><i class="fa-brands fa-telegram fa-lg"></i></a></li>
+                  <li><a href="https://soundcloud.com/diaphoramusic" target="_blank" rel="noopener" aria-label="SoundCloud"><i class="fa-brands fa-soundcloud fa-lg"></i></a></li>
+                  <li><a href="https://www.youtube.com/@diaphoramusic" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube fa-lg"></i></a></li>
+                  <li><a href="https://www.instagram.com/diaphora.music/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram fa-lg"></i></a></li>
+            </ul>
+         </div>
 
-     			<ul class="footer-social">        
-  <li><a href="https://t.me/DiaphoraMusic" target="_blank" rel="noopener" aria-label="Telegram"><i class="fa-brands fa-telegram fa-lg "></i></a></li>
-  <li><a href="https://soundcloud.com/diaphoramusic" target="_blank" rel="noopener" aria-label="SoundCloud"><i class="fa-brands fa-soundcloud fa-lg"></i></a></li>
-  <li><a href="https://www.youtube.com/@diaphoramusic" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube fa-lg"></i></a></li>
-  <li><a href="https://www.instagram.com/diaphora.music/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram fa-lg"></i></a></li>
-			   </ul> 
-	      		
-	      </div>
+         <div class="col-six tab-full">
+            <div class="copyright">
+               <span id="copyright">© Copyright LF – 2026</span>
+               <span>Design by <a href="https://www.lautaroferrandi.com/" target="_blank" rel="noopener">Lautaro Ferrandi</a></span>
+            </div>
+         </div>
 
-      	<div class="col-six tab-full">
-	      	<div class="copyright">
-		        	<span>© Copyright LF - 2025</span> 
-		        	<span>Design by <a href="https://www.lautaroferrandi.com/" target="_blank" rel="noopener">Lautaro Ferrandi</a></span>
-		         </div>
-		         <div class="copyright template-credit">
-		        	<span>Template base by <a href="https://www.styleshout.com/" target="_blank" rel="noopener">StyleShout</a> (CC BY 3.0)</span>
-		         </div>
-	      	</div>
+         <div id="go-top">
+            <a title="Back to top" href="#top" aria-label="Back to top"><i class="fa-solid fa-arrow-up-long"></i></a>
+         </div>
 
-	      	<div id="go-top">
-		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa-solid fa-arrow-up-long"></i></a>
-		      </div>
+      </div> <!-- /row -->
+   </footer>
 
-      	</div> <!-- /row -->     	
-   </footer>  
-
-   <div id="preloader"> 
-    	<div id="loader"></div>
-   </div> 
+   <div id="preloader">
+      <div id="loader"></div>
+   </div>
 
    <!-- Java Script
-   ================================================== --> 
-   <script src="js/jquery-2.1.3.min.js"></script>
-   <script src="js/plugins.js"></script>
+   ================================================== -->
    <script src="js/main.js"></script>
 
 </body>

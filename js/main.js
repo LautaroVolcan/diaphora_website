@@ -1,142 +1,79 @@
 /**
  * ===================================================================
- * main js
- *
+ * main js (no dependencies)
  * -------------------------------------------------------------------
  */
-
-(function($) {
+(function () {
 
 	"use strict";
 
-	/*---------------------------------------------------- */
 	/* Preloader
 	------------------------------------------------------ */
-	$(window).load(function() {
-
-		// will first fade out the loading animation
-		$("#loader").fadeOut("slow", function(){
-
-			// will fade out the whole DIV that covers the website.
-			$("#preloader").delay(300).fadeOut("slow");
-
-		});
-
+	window.addEventListener("load", function () {
+		var preloader = document.getElementById("preloader");
+		if (preloader) preloader.classList.add("is-hidden");
 	});
 
 
-	/*---------------------------------------------------- */
-	/* FitText Settings
+	/* Mobile menu
 	------------------------------------------------------ */
-	setTimeout(function() {
+	var toggle = document.querySelector(".menu-toggle"),
+		nav = document.querySelector(".main-navigation");
 
-		$('#intro h1').fitText(1, { minFontSize: '42px', maxFontSize: '84px' });
+	function setMenu(open) {
+		toggle.classList.toggle("is-clicked", open);
+		nav.classList.toggle("is-open", open);
+		toggle.setAttribute("aria-expanded", open ? "true" : "false");
+	}
 
-	}, 100);
-
-
-	/*---------------------------------------------------- */
-	/* Owl Carousel (services)
-	------------------------------------------------------ */
-	$("#owl-slider").owlCarousel({
-		navigation: false,
-		pagination: true,
-		itemsCustom : [
-			[0, 1],
-			[700, 2],
-			[960, 3]
-		],
-		navigationText: false
-	});
-
-
-	/*-----------------------------------------------------*/
-	/* Navigation Menu
-	------------------------------------------------------ */
-	var toggleButton = $('.menu-toggle'),
-		nav = $('.main-navigation');
-
-	// toggle button
-	toggleButton.on('click', function(e) {
-
+	toggle.addEventListener("click", function (e) {
 		e.preventDefault();
-		toggleButton.toggleClass('is-clicked');
-		nav.slideToggle();
-
+		setMenu(!nav.classList.contains("is-open"));
 	});
 
-	// nav items
-	nav.find('li a').on("click", function() {
-
-		// update the toggle button
-		toggleButton.toggleClass('is-clicked');
-		// fadeout the navigation panel
-		nav.fadeOut();
-
+	nav.querySelectorAll("a").forEach(function (link) {
+		link.addEventListener("click", function () { setMenu(false); });
 	});
 
 
-	/*---------------------------------------------------- */
-	/* Highlight the current section in the navigation bar
+	/* Highlight the current section in the navigation
 	------------------------------------------------------ */
-	var sections = $("section"),
-		navigation_links = $("#main-nav-wrap li a");
-
-	sections.waypoint( {
-
-		handler: function(direction) {
-
-			var active_section;
-
-			active_section = $('section#' + this.element.id);
-
-			if (direction === "up") active_section = active_section.prev();
-
-			var active_link = $('#main-nav-wrap a[href="#' + active_section.attr("id") + '"]');
-
-			navigation_links.parent().removeClass("current");
-			active_link.parent().addClass("current");
-
-		},
-
-		offset: '25%'
+	var links = {};
+	nav.querySelectorAll('a[href^="#"]').forEach(function (a) {
+		links[a.getAttribute("href").slice(1)] = a.parentElement;
 	});
 
+	if ("IntersectionObserver" in window) {
+		var observer = new IntersectionObserver(function (entries) {
+			entries.forEach(function (entry) {
+				if (!entry.isIntersecting || !links[entry.target.id]) return;
+				Object.keys(links).forEach(function (id) { links[id].classList.remove("current"); });
+				links[entry.target.id].classList.add("current");
+			});
+		}, { rootMargin: "-40% 0px -55% 0px" });
 
-	/*---------------------------------------------------- */
-	/* Smooth Scrolling
+		document.querySelectorAll("section[id]").forEach(function (s) { observer.observe(s); });
+	}
+
+
+	/* Header background + back-to-top button on scroll
 	------------------------------------------------------ */
-	$('.smoothscroll').on('click', function (e) {
+	var header = document.querySelector("header"),
+		goTop = document.getElementById("go-top"),
+		intro = document.getElementById("intro");
 
-		e.preventDefault();
-
-		var target = this.hash,
-			$target = $(target);
-
-		$('html, body').stop().animate({
-			'scrollTop': $target.offset().top
-		}, 800, 'swing', function () {
-			window.location.hash = target;
-		});
-
-	});
+	function onScroll() {
+		var y = window.scrollY;
+		header.classList.toggle("is-scrolled", y > intro.offsetHeight - 80);
+		goTop.classList.toggle("is-visible", y >= 300);
+	}
+	window.addEventListener("scroll", onScroll, { passive: true });
+	onScroll();
 
 
-	/*----------------------------------------------------- */
-	/* Back to top
-	------------------------------------------------------- */
-	var pxShow = 300,      // scroll height at which the button shows
-		fadeInTime = 400,
-		fadeOutTime = 400;
+	/* Footer year
+	------------------------------------------------------ */
+	var copyright = document.getElementById("copyright");
+	if (copyright) copyright.textContent = "© Copyright LF – " + new Date().getFullYear();
 
-	$(window).scroll(function() {
-
-		if ($(window).scrollTop() >= pxShow) {
-			$("#go-top").fadeIn(fadeInTime);
-		} else {
-			$("#go-top").fadeOut(fadeOutTime);
-		}
-
-	});
-
-})(jQuery);
+})();
