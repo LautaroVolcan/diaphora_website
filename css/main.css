@@ -2832,3 +2832,12 @@ header.is-scrolled .top-bar {
 		margin-bottom: .8rem;
 	}
 }
+@media only screen and (max-width:360px) {
+	.intro-content .intro-position {
+		font-size: 1.05rem;
+		letter-spacing: .05rem;
+	}
+	.intro-content .intro-position span + span::before {
+		padding: 0 .5rem;
+	}
+}
