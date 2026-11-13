@@ -1337,7 +1337,7 @@ header .logo a {
 	position: relative;
 }
 .intro-content .col-twelve {
-	max-width: 560px;
+	max-width: 720px;
 }
 .intro-content h1 {
 	color: #FFFFFF;
@@ -1365,13 +1365,25 @@ header .logo a {
 	color: rgba(255, 255, 255, 0.85);
 	margin-bottom: 3.6rem;
 }
+/* Every role gets a leading "|". The paragraph is shifted left by one
+   separator width and that strip is clipped, so whichever role starts a
+   line (first one or after a wrap) never shows a dangling separator. */
+.intro-content .intro-position {
+	--sep: 2.6rem;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: calc(-1 * var(--sep));
+	clip-path: inset(0 0 0 var(--sep));
+}
 .intro-content .intro-position span {
 	display: inline-block;
+	white-space: nowrap;
 }
-.intro-content .intro-position span + span::before {
+.intro-content .intro-position span::before {
 	content: "|";
 	display: inline-block;
-	padding: 0 1.2rem;
+	width: var(--sep);
+	text-align: center;
 	color: rgba(255, 255, 255, 0.3);
 }
 .intro-content .button {
@@ -1454,11 +1466,9 @@ header .logo a {
 }
 @media only screen and (max-width:600px) {
 	.intro-content .intro-position {
+		--sep: 1.8rem;
 		font-size: 1.15rem;
 		letter-spacing: .1rem;
-	}
-	.intro-content .intro-position span + span::before {
-		padding: 0 .7rem;
 	}
 }
 @media only screen and (max-width:400px) {
@@ -2834,10 +2844,59 @@ header.is-scrolled .top-bar {
 }
 @media only screen and (max-width:360px) {
 	.intro-content .intro-position {
+		--sep: 1.4rem;
 		font-size: 1.05rem;
 		letter-spacing: .05rem;
 	}
-	.intro-content .intro-position span + span::before {
-		padding: 0 .5rem;
+}
+
+/**
+ * language switch (EN / ES)
+ * -------------------------------------------------------------------
+ */
+.lang-switch {
+	position: fixed;
+	top: 14px;
+	right: 16px;
+	z-index: 700;
+	display: flex;
+	align-items: center;
+	gap: .2rem;
+	padding: .3rem;
+	border-radius: 2rem;
+	background: rgba(21, 21, 21, 0.7);
+}
+.lang-switch button {
+	font-family: "poppins-semibold", sans-serif;
+	font-size: 1.2rem;
+	line-height: 1;
+	letter-spacing: .1rem;
+	height: auto;
+	margin: 0;
+	padding: .8rem 1rem;
+	border: 0;
+	border-radius: 2rem;
+	background: transparent;
+	color: rgba(255, 255, 255, 0.6);
+	cursor: pointer;
+	transition: color .2s, background .2s;
+}
+.lang-switch button:hover,
+.lang-switch button:focus-visible {
+	color: #FFFFFF;
+	background: transparent;
+}
+.lang-switch button[aria-pressed="true"] {
+	color: #FFFFFF;
+	background: var(--accent);
+}
+@media only screen and (min-width:1025px) {
+	.lang-switch {
+		position: static;
+		margin-left: 3.6rem;
+		background: rgba(255, 255, 255, 0.08);
+	}
+	header .top-bar nav {
+		margin-left: auto;
 	}
 }
