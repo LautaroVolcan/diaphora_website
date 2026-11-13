@@ -35,9 +35,6 @@
  *
  * ------------------------------------------------------------------- 
  */
-@import url("fonts.css");
-@import url("font-awesome/css/font-awesome.min.css");
-@import url("micons/micons.css");
 
 
 /** 
@@ -563,7 +560,8 @@ select {
 }
 .ss-custom-select::after {
 	content: '\f0d7';
-	font-family: 'FontAwesome';
+	font-family: 'Font Awesome 6 Free';
+	font-weight: 900;
 	position: absolute;
 	top: 50%;
 	right: 1.5rem;
@@ -1299,7 +1297,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #intro {
-	background: #151515 url(../images/intro_bg_D.jpg) no-repeat center bottom;
+	background: #151515 url(../images/intro-bg.webp) no-repeat center bottom;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1394,7 +1392,8 @@ header .logo a {
 .intro-content .button::after {
 	display: inline-block;
 	content: "\f107";
-	font-family: fontAwesome;
+	font-family: 'Font Awesome 6 Free';
+	font-weight: 900;
 	font-size: 1.6rem;
 	line-height: inherit;
 	text-align: center;
@@ -2117,7 +2116,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #services {
-	background: #313131 url(../images/Serv_BG_D.jpg) no-repeat center;
+	background: #313131 url(../images/services-bg.webp) no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -2136,7 +2135,7 @@ header .logo a {
 	opacity: .9;
 }
 #music {
-	background: #313131 url(../images/bg.jpg) no-repeat center;
+	background: #313131 url(../images/music-bg.webp) no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -2647,3 +2646,33 @@ footer .copyright span:last-child::after {
 }
 
 /*# sourceMappingURL=main.css.map */
+/**
+ * music - soundcloud players
+ * -------------------------------------------------------------------
+ */
+#music .sc-player {
+	display: block;
+	width: 100%;
+	height: 166px;
+	border: 0;
+}
+#music .sc-credit {
+	font: 100 10px/1.6 Interstate, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Garuda, Verdana, Tahoma, sans-serif;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: .4rem 0 3rem;
+}
+#music .sc-credit a {
+	color: #cccccc;
+	text-decoration: none;
+}
+#music .sc-credit a:hover {
+	color: #FF0077;
+}
+
+footer .template-credit {
+	margin-top: .6rem;
+	font-size: 1.2rem;
+	opacity: .6;
+}
