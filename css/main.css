@@ -1639,6 +1639,8 @@ header .logo a {
 #resume .timeline-block {
 	position: relative;
 	padding-top: 1.5rem;
+	padding-bottom: 3rem;
+	display: flow-root; /* contain the floated header so blocks never sit side by side */
 }
 #resume .timeline-ico {
 	height: 4.8rem;
@@ -2792,9 +2794,9 @@ header.is-scrolled .top-bar {
 	color: #6e6e6e;
 }
 .gig-list li {
-	padding: .2rem 0;
+	padding: 0;
 	margin: 0;
-	line-height: 1.7;
+	line-height: 3rem; /* same line box as the timeline h3, so the first gig lines up with "DJ" */
 }
 
 /* services: 4-column grid instead of a carousel */
@@ -2822,5 +2824,11 @@ header.is-scrolled .top-bar {
 @media only screen and (max-width:600px) {
 	.services-list {
 		grid-template-columns: 1fr;
+	}
+}
+@media only screen and (max-width:768px) {
+	.gig-list li {
+		line-height: 1.6;
+		margin-bottom: .8rem;
 	}
 }
